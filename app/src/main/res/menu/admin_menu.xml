@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/admin_board"
+        android:title="@string/dashboard"
+        android:icon="@drawable/dashboard_icon"/>
+
+    <item
+        android:id="@+id/admin_acc"
+        android:title="@string/account"
+        android:icon="@drawable/account_icon" />
+
+    <item
+        android:id="@+id/admin_createAcc"
+        android:title="@string/create_account" />
+
+    <item
+        android:id="@+id/admin_manageAcc"
+        android:title="@string/manage_account" />
+
+    <item
+        android:id="@+id/admin_offers"
+        android:title="@string/offerings"
+        android:icon="@drawable/offering_icon" />
+
+    <item
+        android:id="@+id/admin_curr"
+        android:title="@string/curriculum" />
+
+    <item
+        android:id="@+id/sched"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/admin_prereq"
+        android:title="@string/pre_requisites" />
+
+    <item
+        android:id="@+id/admin_coreq"
+        android:title="@string/co_requisites" />
+
+    <item
+        android:id="@+id/admin_gradeEntry"
+        android:title="@string/grade_entry_schedule"
+        android:icon="@drawable/grade_input_icon" />
+
+    <item
+        android:id="@+id/admin_fees"
+        android:title="@string/fees_management"
+        android:icon="@drawable/fees_icon" />
+
+    <item
+        android:id="@+id/admin_assessment"
+        android:title="@string/assessment_management" />
+
+    <item
+        android:id="@+id/admin_discount"
+        android:title="@string/discount_management" />
+
+    <item
+        android:id="@+id/admin_payment"
+        android:title="@string/payments"
+        android:icon="@drawable/payment_icon" />
+
+    <item
+        android:id="@+id/admin_payTrans"
+        android:title="@string/payment_transaction" />
+
+    <item
+        android:id="@+id/admin_payMan"
+        android:title="@string/payment_management" />
+
+    <item
+        android:id="@+id/admin_setting"
+        android:title="@string/setting"
+        android:icon="@drawable/setting_icon" />
+
+    <item
+        android:id="@+id/admin_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/logout_icon" />
+</menu>

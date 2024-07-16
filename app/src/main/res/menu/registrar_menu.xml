@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/registrar_board"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard_icon"/>
+
+    <item
+        android:id="@+id/registrar_acc"
+        android:title="@string/account"
+        android:icon="@drawable/account_icon" />
+
+    <item
+        android:id="@+id/registrar_createAcc"
+        android:title="@string/create_account" />
+
+    <item
+        android:id="@+id/registrar_manageAcc"
+        android:title="@string/manage_account" />
+
+    <item
+        android:id="@+id/registrar_course"
+        android:title="Course and Curriculums"
+        android:icon="@drawable/course_icon" />
+
+    <item
+        android:id="@+id/registrar_certificates"
+        android:title="Certification" />
+
+    <item
+        android:id="@+id/registrar_admission"
+        android:title="Admission"
+        android:icon="@drawable/admission_icon" />
+
+    <item
+        android:id="@+id/registrar_enrollment"
+        android:title="Enrollment"
+        android:icon="@drawable/enrollment_icon" />
+
+    <item
+        android:id="@+id/registrar_enrollmentList"
+        android:title="Enrollment List" />
+
+    <item
+        android:id="@+id/registrar_enrolledSubject"
+        android:title="Enrolled Subject" />
+
+    <item
+        android:id="@+id/registrar_fees"
+        android:title="Fees Management"
+        android:icon="@drawable/fees_icon" />
+
+    <item
+        android:id="@+id/registrar_assessement"
+        android:title="Assessment Management"/>
+
+    <item
+        android:id="@+id/registrar_discount"
+        android:title="Discount Management"/>
+
+    <item
+        android:id="@+id/regstrar_ledger"
+        android:title="Student Ledger"
+        android:icon="@drawable/ledger_icon"></item>
+
+    <item
+        android:id="@+id/registrar_setting"
+        android:title="@string/setting"
+        android:icon="@drawable/setting_icon" />
+
+    <item
+        android:id="@+id/registrar_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/logout_icon" />
+</menu>

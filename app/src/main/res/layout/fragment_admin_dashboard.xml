@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admindashboard.AdminDashboard">
+
+    <View
+        android:id="@+id/admin_view"
+        android:layout_width="560dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_yellow" />
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <TextView
+           android:id="@+id/admin_welcome"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="36dp"
+           android:layout_marginEnd="392dp"
+           android:text="Welcome!"
+           android:textColor="@color/gray"
+           android:textSize="16dp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/admin_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="388dp"
+           android:text="Admin"
+           android:textColor="@color/black"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/admin_welcome" />
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/admin_image"
+           android:layout_width="75dp"
+           android:layout_height="75dp"
+           android:layout_marginStart="32dp"
+           android:layout_marginTop="36dp"
+           android:src="@drawable/img123"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:shapeAppearanceOverlay="@style/roundedImageView">
+
+       </com.google.android.material.imageview.ShapeableImageView>
+
+       <TextView
+           android:id="@+id/admin_dashboardText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="40dp"
+           android:fontFamily="sans-serif-thin"
+           android:text="Dashboard"
+           android:textColor="@color/black"
+           android:textSize="35dp"
+           android:textStyle="bold"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/admin_image" />
+
+       <com.google.android.material.divider.MaterialDivider
+           android:layout_width="560dp"
+           android:layout_height="2dp"
+           android:layout_marginTop="20dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/admin_dashboardText">
+
+       </com.google.android.material.divider.MaterialDivider>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
