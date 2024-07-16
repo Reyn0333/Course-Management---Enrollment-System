@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/instructor_board"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard_icon" />
+
+    <item
+        android:id="@+id/instructor_classlist"
+        android:title="Class List"
+        android:icon="@drawable/list_icon"/>
+
+    <item
+        android:id="@+id/instructor_sched"
+        android:title="Schedule"
+        android:icon="@drawable/calendar_icon" />
+
+    <item
+        android:id="@+id/instructor_gradeSheet"
+        android:title="Grading Sheet"
+        android:icon="@drawable/grading_icon"/>
+
+    <item
+        android:id="@+id/instructor_setting"
+        android:title="Setting"
+        android:icon="@drawable/setting_icon"/>
+
+    <item
+        android:id="@+id/instructor_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"/>
+
+</menu>
