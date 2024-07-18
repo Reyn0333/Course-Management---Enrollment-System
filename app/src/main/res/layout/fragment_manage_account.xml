@@ -5,14 +5,4 @@
     android:layout_height="match_parent"
     tools:context=".ui.manageAccount.ManageAccountFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="350dp"
-        android:textAlignment="center"
-        android:textColor="@color/apple_red"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:text="Hello po bonding tayo ng matagal pleaseeee" />
-
 </FrameLayout>
