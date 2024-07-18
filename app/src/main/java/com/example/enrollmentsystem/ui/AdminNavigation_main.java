@@ -14,12 +14,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.enrollmentsystem.Login_main;
 import com.example.enrollmentsystem.R;
-import com.example.enrollmentsystem.ui.admindashboard.adding_courses;
+import com.example.enrollmentsystem.ui.admindashboard.courses.adding_courses;
+import com.example.enrollmentsystem.ui.admindashboard.scheduling.Scheduling_one;
 import com.example.enrollmentsystem.ui.createAccount.CreateAccountFragment;
 import com.example.enrollmentsystem.ui.admindashboard.AdminDashboard;
 import com.example.enrollmentsystem.ui.manageAccount.ManageAccountFragment;
 import com.google.android.material.navigation.NavigationView;
-import android.content.Intent;
 
 public class AdminNavigation_main extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
@@ -62,6 +62,12 @@ public class AdminNavigation_main extends AppCompatActivity implements Navigatio
             getSupportFragmentManager().beginTransaction().replace(R.id.admin_fragment_container, new ManageAccountFragment()).commit();
         } else if (id == R.id.admin_curr) {
             getSupportFragmentManager().beginTransaction().replace(R.id.admin_fragment_container, new adding_courses()).commit();
+        } else if (id == R.id.admin_sched) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.admin_fragment_container, new Scheduling_one()).commit();
+        } else if (id == R.id.admin_logout) {
+            Intent intent = new Intent (this, Login_main.class);
+            startActivity(intent);
+            finish();
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

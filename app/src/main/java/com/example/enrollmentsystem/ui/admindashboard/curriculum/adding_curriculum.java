@@ -1,4 +1,4 @@
-package com.example.enrollmentsystem.ui.admindashboard;
+package com.example.enrollmentsystem.ui.admindashboard.curriculum;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.enrollmentsystem.R;
+import com.example.enrollmentsystem.ui.admindashboard.yearend_semester.YearendSemesterList;
 
 import java.util.Calendar;
 

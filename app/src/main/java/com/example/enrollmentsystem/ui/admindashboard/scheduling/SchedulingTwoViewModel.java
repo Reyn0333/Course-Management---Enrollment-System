@@ -1,4 +1,4 @@
-package com.example.enrollmentsystem.ui.admindashboard;
+package com.example.enrollmentsystem.ui.admindashboard.scheduling;
 
 import androidx.lifecycle.ViewModel;
 

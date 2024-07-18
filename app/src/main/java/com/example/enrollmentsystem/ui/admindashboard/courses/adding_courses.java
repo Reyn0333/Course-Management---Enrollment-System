@@ -1,4 +1,4 @@
-package com.example.enrollmentsystem.ui.admindashboard;
+package com.example.enrollmentsystem.ui.admindashboard.courses;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.enrollmentsystem.R;
+import com.example.enrollmentsystem.ui.admindashboard.AdminDashboard;
 
 public class adding_courses extends Fragment {
 
@@ -55,7 +56,7 @@ public class adding_courses extends Fragment {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate back to the previous fragment
+
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 fragmentManager.popBackStack();
             }

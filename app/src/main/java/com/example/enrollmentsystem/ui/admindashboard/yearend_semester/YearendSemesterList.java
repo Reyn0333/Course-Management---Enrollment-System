@@ -1,4 +1,4 @@
-package com.example.enrollmentsystem.ui.admindashboard;
+package com.example.enrollmentsystem.ui.admindashboard.yearend_semester;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.enrollmentsystem.R;
+import com.example.enrollmentsystem.ui.admindashboard.courses.adding_courses;
 
 public class YearendSemesterList extends Fragment {
 

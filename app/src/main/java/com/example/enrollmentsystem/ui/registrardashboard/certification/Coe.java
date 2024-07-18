@@ -1,4 +1,4 @@
-package com.example.enrollmentsystem.ui.admindashboard;
+package com.example.enrollmentsystem.ui.registrardashboard.certification;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.example.enrollmentsystem.R;
 
-public class Scheduling_two extends Fragment {
+public class Coe extends Fragment {
 
-    private SchedulingTwoViewModel mViewModel;
+    private CoeViewModel mViewModel;
 
-    public static Scheduling_two newInstance() {
-        return new Scheduling_two();
+    public static Coe newInstance() {
+        return new Coe();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_scheduling_two, container, false);
+        return inflater.inflate(R.layout.fragment_coe, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(SchedulingTwoViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(CoeViewModel.class);
         // TODO: Use the ViewModel
     }
 

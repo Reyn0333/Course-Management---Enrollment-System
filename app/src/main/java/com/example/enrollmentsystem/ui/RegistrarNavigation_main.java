@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +16,8 @@ import com.example.enrollmentsystem.R;
 import com.example.enrollmentsystem.ui.createAccount.CreateAccountFragment;
 import com.example.enrollmentsystem.ui.admindashboard.AdminDashboard;
 import com.example.enrollmentsystem.ui.manageAccount.ManageAccountFragment;
+import com.example.enrollmentsystem.ui.registrardashboard.RegistrarDashboard;
+import com.example.enrollmentsystem.ui.registrardashboard.department.Department;
 import com.google.android.material.navigation.NavigationView;
 import android.content.Intent;
 
@@ -44,7 +45,7 @@ public class RegistrarNavigation_main extends AppCompatActivity implements Navig
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.registrar_fragment_container, new AdminDashboard()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.registrar_fragment_container, new RegistrarDashboard()).commit();
             navigationView.setCheckedItem(R.id.registrar_acc);
         }
     }
@@ -59,6 +60,8 @@ public class RegistrarNavigation_main extends AppCompatActivity implements Navig
             getSupportFragmentManager().beginTransaction().replace(R.id.registrar_fragment_container, new CreateAccountFragment()).commit();
         } else if (id == R.id.registrar_manageAcc) {
             getSupportFragmentManager().beginTransaction().replace(R.id.registrar_fragment_container, new ManageAccountFragment()).commit();
+        }else if (id == R.id.registrar_certificates){
+            getSupportFragmentManager().beginTransaction().replace(R.id.registrar_fragment_container, new Department()).commit();
         } else if (id == R.id.registrar_logout) {
             Intent intent = new Intent (this, Login_main.class);
             startActivity(intent);

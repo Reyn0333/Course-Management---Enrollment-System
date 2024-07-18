@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Repeated Certificate of Enrollment Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <!-- Header Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HOLY TRINITY PREPARATORY SEMINARY"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brgy. Bautista Labo, Camarines Norte"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CERTIFICATE OF ENROLLMENT"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Semester: ___________"
+                            android:textSize="12sp"
+                            android:gravity="end"
+                            android:layout_marginBottom="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School Year: ___________"
+                            android:textSize="12sp"
+                            android:gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Body Section -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Family Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Given Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Middle Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Registration"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Table Layout -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Table Headers -->
+                    <TableRow>
+                        <TextView android:text="Course No." android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Description" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Units" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Days" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Time" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Fees" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Example Table Rows (Repeat as needed) -->
+                    <TableRow>
+                        <EditText android:hint="1." android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+                    <!-- Repeat rows as needed -->
+
+                    <TableRow>
+                        <EditText android:hint="2." android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+
+
+
+                    <!-- Fees Section -->
+                    <TableRow>
+                        <TextView android:text="TOTAL" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:layout_span="5" android:hint="Total Fees" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/board_lodging"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/reg_misc"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tuition Fee"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rice Share"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Others"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Form A (Registrar's Copy)"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <!-- Repeat the above LinearLayout for other forms as needed -->
+            <!-- Example: Form B (Student's Copy) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <!-- Header Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HOLY TRINITY PREPARATORY SEMINARY"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brgy. Bautista Labo, Camarines Norte"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CERTIFICATE OF ENROLLMENT"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Semester: ___________"
+                            android:textSize="12sp"
+                            android:gravity="end"
+                            android:layout_marginBottom="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School Year: ___________"
+                            android:textSize="12sp"
+                            android:gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Body Section -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Family Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Given Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Middle Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Registration"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Table Layout -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Table Headers -->
+                    <TableRow>
+                        <TextView android:text="Course No." android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Description" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Units" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Days" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Time" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                        <TextView android:text="Fees" android:padding="3dp" android:background="#E0E0E0" android:textStyle="bold" android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Example Table Rows (Repeat as needed) -->
+                    <TableRow>
+                        <EditText android:hint="1." android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+                    <!-- Repeat rows as needed -->
+
+                    <TableRow>
+                        <EditText android:hint="2." android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:hint="" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+
+                    <!-- Fees Section -->
+                    <TableRow>
+                        <TextView android:text="TOTAL" android:padding="3dp" android:textSize="12sp"/>
+                        <EditText android:layout_span="5" android:hint="Total Fees" android:padding="3dp" android:textSize="12sp"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/board_lodging"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/reg_misc"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tuition Fee"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rice Share"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Others"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Form B (Student's Copy)"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <!-- Repeat for Form C if needed -->
+            <!-- Button to Generate PDF -->
+            <Button
+                android:id="@+id/btnGenerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generate PDF"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
